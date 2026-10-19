@@ -1,14 +1,544 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adrian Millarez | Portfolio</title>
-</head>
-<body>
-    
-    <div>
-        <h1>Adrian</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Adrian Millarez's personal developer portfolio."/>
+    <title>Adrian | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="portfolio-container">
+      <!-- Header / Profile -->
+      <header class="profile-header">
+        <div class="profile-main">
+          <div class="profile-image-wrapper">
+            <img
+              src="assets/images/Formal Picture.png"
+              alt="Adrian's profile picture"
+              class="profile-image"
+            />
+          </div>
+          <div class="profile-info">
+            <div class="profile-name-wrapper">
+              <h1 class="profile-name">Adrian T. Millarez</h1>
+
+              <span class="profile-verified" aria-label="Verified profile">
+                <!-- Verified SVG icon -->
+              </span>
+            </div>
+
+            <div class="profile-location">
+              <span class="location-icon">
+                <!-- Location SVG icon -->
+              </span>
+              <p>Bacolod City, Philippines</p>
+            </div>
+
+            <p class="profile-role">
+              BS Information Systems Student | Aspiring Software Engineer, Web
+              Developer, and UI/UX Designer
+            </p>
+
+            <div class="profile-actions">
+              <a
+                href="assets/files/resume.pdf"
+                class="button button-primary"
+                download
+              >
+                <span class="button-icon">
+                  <!-- Download SVG icon -->
+                </span>
+
+                <span>Download Resume</span>
+              </a>
+
+              <a
+                href="mailto:your-email@example.com"
+                class="button button-secondary"
+              >
+                <span class="button-icon">
+                  <!-- Email SVG icon -->
+                </span>
+
+                <span>Send Email</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="theme-toggle-wrapper">
+          <button
+            type="button"
+            class="theme-toggle"
+            aria-label="Toggle dark mode"
+          >
+            <span class="theme-toggle-icon">
+              <!-- Theme SVG icon -->
+            </span>
+          </button>
+        </div>
+      </header>
+
+      <!-- Main Content -->
+      <main class="portfolio-main">
+        <!-- Left Column -->
+        <div class="portfolio-left-column">
+          <!-- About Section -->
+          <section class="card about-card" id="about">
+            <div class="section-header">
+              <div class="section-title-wrapper">
+                <span class="section-icon">
+                  <!-- About SVG icon -->
+                </span>
+
+                <h2 class="section-title">About</h2>
+              </div>
+            </div>
+
+            <div class="about-content">
+              <p class="about-paragraph">
+                I'm an Information Systems student interested in building
+                practical, user-friendly, and efficient digital solutions. I
+                enjoy learning new technologies and exploring software
+                development and interface design.
+              </p>
+
+              <p class="about-paragraph">
+                My academic projects allow me to develop my programming,
+                problem-solving, and teamwork skills. I am continuously
+                improving my knowledge of web development, software engineering,
+                and UI/UX design.
+              </p>
+
+              <p class="about-paragraph">
+                I aim to create clean, responsive, and accessible applications
+                while building a strong foundation in front-end and back-end
+                development.
+              </p>
+            </div>
+          </section>
+
+          <!-- Tech Stack Section -->
+          <section class="card tech-stack-card" id="tech-stack">
+            <div class="section-header">
+              <div class="section-title-wrapper">
+                <span class="section-icon">
+                  <!-- Settings SVG icon -->
+                </span>
+
+                <h2 class="section-title">Tech Stack</h2>
+              </div>
+
+              <a href="#tech-stack" class="section-link">
+                View All
+                <span class="link-icon">
+                  <!-- Arrow SVG icon -->
+                </span>
+              </a>
+            </div>
+
+            <div class="tech-stack-content">
+              <!-- Frontend Technologies -->
+              <div class="tech-category">
+                <h3 class="tech-category-title">Frontend</h3>
+
+                <div class="tech-list">
+                  <div class="tech-item">
+                    <span class="tech-icon">
+                      <!-- HTML SVG icon -->
+                    </span>
+                    <span class="tech-name">HTML</span>
+                  </div>
+
+                  <div class="tech-item">
+                    <span class="tech-icon">
+                      <!-- CSS SVG icon -->
+                    </span>
+                    <span class="tech-name">CSS</span>
+                  </div>
+
+                  <div class="tech-item">
+                    <span class="tech-icon">
+                      <!-- JavaScript SVG icon -->
+                    </span>
+                    <span class="tech-name">JavaScript</span>
+                  </div>
+
+                  <div class="tech-item">
+                    <span class="tech-icon">
+                      <!-- Responsive Design SVG icon -->
+                    </span>
+                    <span class="tech-name">Responsive Design</span>
+                  </div>
+
+                  <div class="tech-item">
+                    <span class="tech-icon">
+                      <!-- UI/UX SVG icon -->
+                    </span>
+                    <span class="tech-name">UI/UX Design</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Backend Technologies -->
+              <div class="tech-category">
+                <h3 class="tech-category-title">Backend</h3>
+
+                <div class="tech-list">
+                  <div class="tech-item">
+                    <span class="tech-icon">
+                      <!-- Java SVG icon -->
+                    </span>
+                    <span class="tech-name">Java</span>
+                  </div>
+
+                  <div class="tech-item">
+                    <span class="tech-icon">
+                      <!-- SQL SVG icon -->
+                    </span>
+                    <span class="tech-name">SQL</span>
+                  </div>
+
+                  <div class="tech-item">
+                    <span class="tech-icon">
+                      <!-- Database SVG icon -->
+                    </span>
+                    <span class="tech-name">Database Management</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Development Tools -->
+              <div class="tech-category">
+                <h3 class="tech-category-title">Tools</h3>
+
+                <div class="tech-list">
+                  <div class="tech-item">
+                    <span class="tech-icon">
+                      <!-- Git SVG icon -->
+                    </span>
+                    <span class="tech-name">Git</span>
+                  </div>
+
+                  <div class="tech-item">
+                    <span class="tech-icon">
+                      <!-- GitHub SVG icon -->
+                    </span>
+                    <span class="tech-name">GitHub</span>
+                  </div>
+
+                  <div class="tech-item">
+                    <span class="tech-icon">
+                      <!-- VS Code SVG icon -->
+                    </span>
+                    <span class="tech-name">VS Code</span>
+                  </div>
+
+                  <div class="tech-item">
+                    <span class="tech-icon">
+                      <!-- NetBeans SVG icon -->
+                    </span>
+                    <span class="tech-name">NetBeans</span>
+                  </div>
+
+                  <div class="tech-item">
+                    <span class="tech-icon">
+                      <!-- Microsoft Access SVG icon -->
+                    </span>
+                    <span class="tech-name">Microsoft Access</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Projects Section -->
+          <section class="card projects-card" id="projects">
+            <div class="section-header">
+              <div class="section-title-wrapper">
+                <span class="section-icon">
+                  <!-- Projects SVG icon -->
+                </span>
+
+                <h2 class="section-title">Featured Projects</h2>
+              </div>
+
+              <a href="#projects" class="section-link"> View All </a>
+            </div>
+
+            <div class="projects-list">
+              <!-- ClassMate Project -->
+              <article class="project-item">
+                <div class="project-image-wrapper">
+                  <img
+                    src="assets/images/classmate-preview.png"
+                    alt="ClassMate project preview"
+                    class="project-image"
+                    loading="lazy"
+                  />
+                </div>
+
+                <div class="project-content">
+                  <h3 class="project-title">ClassMate</h3>
+
+                  <p class="project-description">
+                    An integrated web-based schedule and academic management
+                    platform for students.
+                  </p>
+
+                  <div class="project-tech-list">
+                    <span class="project-tech">HTML</span>
+                    <span class="project-tech">CSS</span>
+                    <span class="project-tech">JavaScript</span>
+                  </div>
+
+                  <div class="project-actions">
+                    <a
+                      href="projects/classmate/index.html"
+                      class="project-link"
+                    >
+                      View Project
+                    </a>
+                  </div>
+                </div>
+              </article>
+
+              <!-- ICTD IMS Project -->
+              <article class="project-item">
+                <div class="project-image-wrapper">
+                  <img
+                    src="assets/images/ictd-ims-preview.png"
+                    alt="ICTD Information Management System preview"
+                    class="project-image"
+                    loading="lazy"
+                  />
+                </div>
+
+                <div class="project-content">
+                  <h3 class="project-title">
+                    ICTD Information Management System
+                  </h3>
+
+                  <p class="project-description">
+                    A desktop information management system designed to organize
+                    departmental records, equipment, service requests, and
+                    attendance.
+                  </p>
+
+                  <div class="project-tech-list">
+                    <span class="project-tech">Java</span>
+                    <span class="project-tech">Java Swing</span>
+                    <span class="project-tech">MS Access</span>
+                  </div>
+
+                  <div class="project-actions">
+                    <a href="#projects" class="project-link">
+                      View Project Details
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </section>
+        </div>
+
+        <!-- Right Column -->
+        <aside class="portfolio-right-column">
+          <!-- Experience Section -->
+          <section class="card experience-card" id="experience">
+            <div class="section-header">
+              <div class="section-title-wrapper">
+                <span class="section-icon">
+                  <!-- Experience SVG icon -->
+                </span>
+
+                <h2 class="section-title">Experience</h2>
+              </div>
+            </div>
+
+            <div class="timeline">
+              <article class="timeline-item">
+                <div class="timeline-marker"></div>
+
+                <div class="timeline-date">
+                  <time datetime="2026">2025</time>
+                </div>
+
+                <div class="timeline-content">
+                  <h3 class="timeline-title">Student Assistant</h3>
+
+                  <p class="timeline-subtitle">
+                    Information and Communication Technology Department
+                  </p>
+
+                  <p class="timeline-description">
+                    Assisted with departmental duties and university activities.
+                  </p>
+                </div>
+              </article>
+
+              <article class="timeline-item">
+                <div class="timeline-marker"></div>
+
+                <div class="timeline-date">
+                  <time datetime="2025">2025</time>
+                </div>
+
+                <div class="timeline-content">
+                  <h3 class="timeline-title">Academic Projects</h3>
+
+                  <p class="timeline-subtitle">Software and Web Development</p>
+
+                  <p class="timeline-description">
+                    Worked on academic projects involving programming and system
+                    development.
+                  </p>
+                </div>
+              </article>
+
+              <article class="timeline-item">
+                <div class="timeline-marker"></div>
+
+                <div class="timeline-date">
+                  <time datetime="2024">2024</time>
+                </div>
+
+                <div class="timeline-content">
+                  <h3 class="timeline-title">Started Learning Programming</h3>
+
+                  <p class="timeline-description">
+                    Began developing technical and problem-solving skills.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <!-- Education Section -->
+          <section class="card education-card" id="education">
+            <div class="section-header">
+              <div class="section-title-wrapper">
+                <span class="section-icon">
+                  <!-- Education SVG icon -->
+                </span>
+
+                <h2 class="section-title">Education</h2>
+              </div>
+            </div>
+
+            <div class="timeline">
+              <article class="timeline-item">
+                <div class="timeline-marker"></div>
+
+                <div class="timeline-date">
+                  <time datetime="2024">2024</time> – Present
+                </div>
+
+                <div class="timeline-content">
+                  <h3 class="timeline-title">
+                    Bachelor of Science in Information Systems
+                  </h3>
+
+                  <p class="timeline-subtitle">
+                    University of Negros Occidental – Recoletos
+                  </p>
+
+                  <ul class="education-details">
+                    <li>Information Systems</li>
+                    <li>Web Development</li>
+                    <li>Data Structures and Algorithms</li>
+                    <li>Database Management</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <!-- Contact Section -->
+          <section class="card contact-card" id="contact">
+            <div class="section-header">
+              <div class="section-title-wrapper">
+                <span class="section-icon">
+                  <!-- Contact SVG icon -->
+                </span>
+
+                <h2 class="section-title">Contact</h2>
+              </div>
+            </div>
+
+            <div class="contact-content">
+              <p class="contact-description">
+                Interested in connecting or collaborating? Feel free to reach
+                out.
+              </p>
+
+              <a href="mailto:your-email@example.com" class="contact-link">
+                <span class="contact-icon">
+                  <!-- Email SVG icon -->
+                </span>
+                <span>Email</span>
+              </a>
+
+              <a
+                href="https://github.com/your-username"
+                class="contact-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="contact-icon">
+                  <!-- GitHub SVG icon -->
+                </span>
+                <span>GitHub</span>
+              </a>
+
+              <a
+                href="https://www.linkedin.com/"
+                class="contact-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="contact-icon">
+                  <!-- LinkedIn SVG icon -->
+                </span>
+                <span>LinkedIn</span>
+              </a>
+            </div>
+          </section>
+        </aside>
+      </main>
+
+      <!-- Footer -->
+      <footer class="portfolio-footer">
+        <div class="footer-content">
+          <p class="footer-copyright">
+            &copy; 2026 Adrian T. Millarez. All rights reserved.
+          </p>
+
+          <div class="footer-links">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+      </footer>
+
+      <!-- Floating Contact Button -->
+      <div class="floating-contact-wrapper">
+        <button
+          type="button"
+          class="floating-contact-button"
+          aria-label="Chat with Adrian"
+        >
+          <span class="floating-contact-icon">
+            <!-- Chat SVG icon -->
+          </span>
+
+          <span class="floating-contact-text">Chat with Adrian</span>
+        </button>
+      </div>
     </div>
-</body>
+  </body>
 </html>
+```
